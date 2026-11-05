@@ -16,17 +16,6 @@
     });
   }
 
-  var select = document.getElementById('f-need');
-  document.querySelectorAll('[data-package]').forEach(function (link) {
-    link.addEventListener('click', function () {
-      if (!select) return;
-      var wanted = link.getAttribute('data-package');
-      for (var i = 0; i < select.options.length; i++) {
-        if (select.options[i].text === wanted) { select.selectedIndex = i; break; }
-      }
-    });
-  });
-
   var next = document.querySelector('input[name="_next"]');
   if (next && location.protocol.indexOf('http') === 0) {
     next.value = new URL('thanks.html', location.href).href;

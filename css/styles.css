@@ -153,6 +153,15 @@ section { padding: 3.5rem 0; }
 .steps h3 { margin-bottom: .25rem; }
 .steps p { margin: 0; color: var(--ink-soft); }
 
+.guarantee {
+  margin-top: 2rem;
+  background: var(--sun-tint);
+  border: 2px solid #f1d9a0;
+  border-radius: var(--radius);
+  padding: 1.5rem 1.6rem;
+}
+.guarantee h3 { margin-bottom: .9rem; }
+
 /* Pricing */
 .price-grid { display: grid; gap: 1.1rem; }
 .price-card { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.6rem; box-shadow: var(--shadow); position: relative; }
@@ -218,6 +227,14 @@ input, select, textarea {
 textarea { min-height: 120px; resize: vertical; }
 input:focus, select:focus, textarea:focus { outline: none; border-color: var(--jac); box-shadow: 0 0 0 3px rgba(106, 76, 194, .2); }
 .two { display: grid; gap: 1rem; }
+fieldset.field { border: 0; padding: 0; margin: 0; min-inline-size: 0; }
+.choice { display: flex; flex-wrap: wrap; gap: .75rem; }
+.choice label {
+  display: inline-flex; align-items: center; gap: .5rem;
+  min-height: 48px; padding: .4rem 1rem; border: 1.5px solid #d6cec2;
+  border-radius: 10px; background: #fff; font-weight: 700; cursor: pointer;
+}
+.choice input { width: 20px; height: 20px; min-height: 0; accent-color: var(--jac); }
 .consent { display: flex; gap: .7rem; align-items: flex-start; font-size: .95rem; color: var(--ink-soft); }
 .consent input { width: 22px; height: 22px; min-height: 0; flex: none; margin-top: 2px; accent-color: var(--jac); }
 .hp { position: absolute; left: -9999px; }
@@ -229,6 +246,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--j
 .site-footer h2 { font-size: 1rem; color: var(--sun); margin-bottom: .6rem; letter-spacing: 0; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .4rem; }
 .footer-bottom { border-top: 1px solid rgba(255, 255, 255, .12); margin-top: 2rem; padding-top: 1.25rem; font-size: .88rem; color: #aaa2c2; }
+.footer-email { font-size: .85em; color: #aaa2c2; }
 
 /* Sticky mobile action bar */
 .action-bar {
